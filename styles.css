@@ -1,0 +1,144 @@
+:root{
+    /*Cores*/
+    --cor-primaria: #380712; 
+    --cor-segundaria: #000000;
+    --cor-fundo: #000000;
+    --cor-texto: rgb(255, 255, 255);
+
+    /*Espaçamentos*/
+    --espaco-xxs: 4px;
+    --espaco-xs: 8px; 
+    --espaco-sm: 12px; 
+    --espaco-md: 16px; 
+    --espaco-lg: 24px;
+    --espaco-xl: 32px; 
+    --espaco-xxl: 48px;
+}
+
+
+
+body{
+    /*Fonte*/
+    font-family: Arial, Helvetica, sans-serif;
+    /* Margem zerada*/
+    margin: 0;
+    padding: 0;
+    /*Cor Fundo*/
+    background-color: var(--cor-fundo);
+    /*Cor do texto*/
+    color: var(--cor-texto);
+}
+
+.container{
+    max-width: 70%;
+    margin: 0 auto;
+    padding: var(--espaco-lg);
+}
+/*Cabeçalho*/
+header{
+    background-color: var(--cor-primaria);
+    padding: var(--espaco-lg);
+
+    text-align: center;
+    color: whitesmoke;
+    font-size: 24px;
+}
+/*Menu de nav*/
+nav{
+    background-color: var(--cor-segundaria);
+    padding: 0 5px;
+    text-align: center;
+}
+/*Mudar apenas os links d nav*/
+nav a{
+    color: #ffffff;
+    /*tira o traço*/
+    text-decoration: none;
+    /*10 sup e inf*/
+    /*20 esq e dir*/
+    padding: 10px 20px;
+    /*ocupa o espaço do txt e a dimensão do componente*/
+    display: inline-block;
+}
+
+nav a:hover{
+    background-color: var(--cor-primaria)
+}
+
+/*Configurar o main*/
+main{
+    padding: var(--espaco-lg);
+    text-align: center;
+}
+
+footer{
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: var(--espaco-sm);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+/* Listas */
+ol ul{
+    /*ajusta lista pra dentro */
+    list-style-position: inside;
+    /* sem margem interna esqueda */
+    padding-left: 0;
+    /* alinhar texto */
+    text-align: left;
+}
+
+li{
+    /* margem inferior */
+    margin-bottom: 8px;   
+}
+
+/* Cartoes = card */
+
+.portfolio-container{
+    /* orgnzar o container */
+    display: flex;
+    /* alinhar */
+    justify-content: center;
+    /* kbra d linha */
+    flex-wrap: wrap;
+    /* escapamento itens */
+    gap: 20px;
+    /* margem interna */
+    padding: 20px;
+}
+
+.card{
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    box-shadow: 2px 2px 10px rgba(38, 0, 255, 0.8);
+    transition: transform 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: var(--cor-primaria);
+    color: white;
+    text-decoration: none;
+    /* Arredondamento */
+    border-radius: 10px;
+}
+
+.card a:hover{
+    background-color: var(--cor-segundaria);
+    
+}

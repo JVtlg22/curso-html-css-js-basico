@@ -143,19 +143,45 @@ console.log(frutas)
  */
 
 //Para: percorre uma lista conhecida 
-for(let f of frutas){
+for (let f of frutas) {
     console.log(f)
 }
-for(f in frutas){
+for (f in frutas) {
     console.log(f)
 }
 //enquantp nao tiver afim
-let contador=0
-let regressiva=10
-while(contador <=10){
-    console.log(contador,regressiva)
+let contador = 0
+let regressiva = 10
+while (contador <= 10) {
+    console.log(contador, regressiva)
     //incrementar
     contador++
     //decrementar
     regressiva--;
 }
+
+// dicionario
+let pessoa = {
+    "nome": "Jota yoshida",
+    "idade": 18,
+    cidadeUF: "Castro/PR",
+    Profissao: "Tecnico"
+
+}
+
+console.log(pessoa)
+console.log(pessoa['nome'])
+console.log(pessoa.nome)
+// Mudar item
+pessoa['nome'] = 'jota yoshida'
+pessoa.cidadeUF = "castro-PR"
+console.log(pessoa)
+pessoa['linguagem'] = "JS"
+pessoa.framework = 'react.js'
+console.log(pessoa)
+//deletar
+delete pessoa.framework
+console.log(pessoa)
+//desestruturador (destrutor)
+const {linguagem, cidadeUF} = pessoa
+console.log(linguagem,cidadeUF)
